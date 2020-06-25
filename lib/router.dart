@@ -15,9 +15,12 @@ import 'package:Prism/ui/pages/undefinedScreen.dart';
 import 'package:Prism/ui/pages/wallpaperScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:Prism/ui/pages/bottomSheetPageScreen.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
+    case BottomSheetRoute:
+      return CupertinoPageRoute(builder: (context) => BottomSheetPage());
     case SplashRoute:
       return CupertinoPageRoute(builder: (context) => SplashWidget());
     case SearchRoute:

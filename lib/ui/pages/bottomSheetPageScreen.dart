@@ -157,17 +157,14 @@ void _settingModalBottomSheet(context){
     );
 }
 
-class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
-  
+class BottomSheetPage extends StatefulWidget {
+  BottomSheetPage({Key key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
-  
+  _BottomSheetPageState createState() => _BottomSheetPageState();
 }
 
-class _HomeState extends State<Home> {
-  
+class _BottomSheetPageState extends State<BottomSheetPage> {
   bool _isBlurred = false; 
   @override
   Widget build(BuildContext context) {
@@ -203,3 +200,10 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
+
+  
+
+  
+  
+
